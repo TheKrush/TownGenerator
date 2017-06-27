@@ -1,0 +1,24 @@
+#sliders {
+    width: 300px;
+    padding: 20px;
+}
+
+#sliders {
+    margin-bottom: 5px;
+}
+
+.values{
+	width:26px;
+	text-align: center;
+}
+
+.buttons{
+	position:absolute;
+	left:160px;
+}
+
+.container{
+	position:relative;
+	top:-25px;
+	left:320px;
+}
