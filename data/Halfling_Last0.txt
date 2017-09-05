@@ -6,8 +6,8 @@ Boffin
 Bolger
 Bolger-Baggins
 Bophin
-Boulderhill
 Bottomhill
+Boulderhill
 Bracegirdle
 Bramblethorn
 Brandagamba
@@ -29,10 +29,10 @@ Cutton
 Dewfoot
 Diggle
 Elvellon
-Farfoot
 Fairbairn
 Fairfoot
 Fallohide
+Farfoot
 Featherbottom
 Finnagund
 Fleetfoot
@@ -72,8 +72,8 @@ Leafwalker
 Lightfoot
 Littlefoot
 Longbottom
-Longhole
 Longfoot
+Longhole
 Longriver
 Lothran
 Maggot
@@ -84,9 +84,9 @@ North-took
 Oakbottom
 Oldbuck
 Pott
+Proudbody
 Proudbottom
 Proudfoot
-Proudbody
 Proudmead
 Puddifoot
 Puddlefoot
@@ -115,9 +115,9 @@ Twofoot
 Underburrow
 Underfoot
 Underhill
-Undertree
 Underlake
+Undertree
 Wanderfoot
-Whitfoot
 Whitbottom
+Whitfoot
 Zaragamba

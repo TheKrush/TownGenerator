@@ -10,13 +10,13 @@ Bonk
 Bu
 Bur
 Car
-Do
-Don
-Donk
 Di
 Dim
 Din
 Dink
+Do
+Don
+Donk
 El
 Fen
 Fil
@@ -41,8 +41,8 @@ Nittle
 Pit
 Pith
 Tal
-Ten
 Teen
+Ten
 Then
 Thin
 Think

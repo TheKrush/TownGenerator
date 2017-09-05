@@ -2,7 +2,6 @@ Ad
 Am
 Arm
 Baer
-Daer
 Bal
 Ban
 Bar
@@ -17,6 +16,7 @@ Bran
 Brom
 Brum
 Bun
+Daer
 Dal
 Dar
 Dol

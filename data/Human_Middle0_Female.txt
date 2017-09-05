@@ -245,8 +245,8 @@ Annalena
 Annalise
 Annamaria
 Anne
-Anne-Kathrin
 Annekathrin
+Anne-Kathrin
 Anneke
 Annelie
 Anneliese
@@ -531,7 +531,6 @@ Bryanna
 Brynn
 Buffy
 Burgi
-Cäzilie
 Cadence
 Cadencia
 Cady
@@ -606,6 +605,7 @@ Catherine
 Cathleen
 Cathrin
 Cayla
+Cäzilie
 Cecelia
 Cecile
 Cecilia
@@ -1961,7 +1961,6 @@ Kylie
 Kym
 Kymberly
 Kyra
-LaVergne
 Lace
 Lacee
 Lacene
@@ -1990,6 +1989,7 @@ Laurette
 Laurina
 Laurine
 Lauryn
+LaVergne
 Lavern
 Laverna
 Laverne
@@ -2175,8 +2175,8 @@ Lydie
 Lyndsey
 Lynette
 Lynn
-Lynn-Marie
 Lynnette
+Lynn-Marie
 Lyonette
 Lyra
 Lyric

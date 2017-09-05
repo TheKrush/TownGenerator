@@ -172,7 +172,6 @@ Fender
 Fenn
 Ferren
 Fisher
-Fisher
 Flay
 Fletcher
 Flint
@@ -193,7 +192,6 @@ Fyste
 Gaege
 Gardener
 Gargalen
-Garner
 Garner
 Gaunt
 Glovelyn
@@ -378,7 +376,6 @@ Prester
 Pryor
 Purell
 Pyle
-Pyne
 Pyne
 Pyre
 Qoherys
@@ -574,5 +571,7 @@ Wyne
 Wythers
 Yarwyck
 Yelshire
+Yew
+Yronwoodelshire
 Yew
 Yronwood
