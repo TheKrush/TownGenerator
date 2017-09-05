@@ -1,3 +1,4 @@
+
 Ale
 Amber
 Anvil
@@ -14,7 +15,6 @@ Blazing
 Blessed
 Blood
 Blunt
-Bone
 Bone
 Bottle
 Boulder
@@ -44,7 +44,6 @@ Ember
 Fiery
 Flask
 Flat
-Flint
 Flint
 Forge
 Frost
@@ -114,7 +113,7 @@ Twilight
 Under
 War
 Warm
-Whit
+White
 Wind
 Wold
 Wraith
