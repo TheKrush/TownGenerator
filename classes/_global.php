@@ -1,5 +1,6 @@
 <?
 
+require_once("GhLogger.class.php");
 require_once("mersenne_twister.php");
 use mersenne_twister\twister;
 
@@ -14,13 +15,19 @@ $rand = new twister(crc32($seed));
 global $MAX_FILECOUNT;
 $MAX_FILECOUNT = 100;
 
-function logMessage($level, $message)
-{
-  if($level == "DEBUG")
-  {
-    return;
-  }
-  echo("[".$level."] ".$message."\n");
-}
+global $race_list;
+$race_list = array(
+  "demon",
+  "dragonborn",
+  "dwarf",
+  "elf",
+  "gnome",
+  "goblin",
+  "halfelf",
+  "halfling",
+  "human",
+  "orc",
+  "tiefling"
+);
 
 ?>

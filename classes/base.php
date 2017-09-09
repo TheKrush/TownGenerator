@@ -4,23 +4,15 @@ require_once("_global.php");
 
 abstract class base
 {
-  protected static $names;
-  private static $seed;
-
   protected $data;
 
   function __construct()
   {
-    logMessage("DEBUG", get_class()." constructor");
+    GhLogger::writeLog(get_class()." constructor", GhLogger::TRACE);
 
     if(is_null($this->data))
     {
       $this->data = array();
-    }
-
-    if(is_null(self::$names))
-    {
-      self::$names = array();
     }
   }
 
@@ -32,10 +24,19 @@ abstract class base
     $i = $rand->rangeint(0,count($array)-1);
     return $array[$i];
   }
+  
+  protected function generate()
+  {
+  }
 
   public function getData()
   {
     return $this->data;
+  }
+  
+  public function printData()
+  {
+    print_r($this->data);
   }
 }
 

@@ -2,21 +2,84 @@
 <head>
 <style>
 body {
-    background-color: #ccc;
+  background-color: #ddd;
+}
+pre {
+  margin: 0px;
 }
 </style>
 </head>
 <body>
-<pre>
 <?
 
-$seed = $_GET['seed'];
-
+$seed = $_GET['seed'];if(!$seed)
+{
+  $seed = rand();
+}
 require_once("classes/_global.php");
+GhLogger::setErrorLevel(GhLogger::INFO);
+//GhLogger::setErrorLevel(GhLogger::TRACE);
+GhLogger::writeLog("Seed: ".$seed);
+
 require_once("classes/races.php");
 
-logMessage("INFO", "Seed: ".$seed);
+require_once("classes/base.php");
+class town extends base
+{
+  private $generationInfo;
 
+  private $citizens;
+
+  function __construct($generationInfo)
+  {
+    parent::__construct();
+    GhLogger::writeLog(get_class()." constructor", GhLogger::TRACE);
+
+    $this->generationInfo = $generationInfo;
+
+    if(is_null($this->citizens))
+    {
+      $this->citizens = array();
+      $this->genCitizens();
+    }
+  }
+  
+  public function printTown()
+  {
+    foreach($this->citizens as $citizen)
+    {
+        GhLogger::writeLog($citizen->getName()." - ".$citizen->getRace()." ".$citizen->getGender(), GhLogger::INFO);
+        //$citizen->printData();
+    }
+  }
+
+  private function genCitizens()
+  {
+    global $race_list;
+    foreach($race_list as $race)
+    {
+      $race_type = get_parent_class($race);
+
+      switch($race_type)
+      {
+        case "genderless_race":
+          $citizen = new $race();
+          $this->citizens[] = $citizen;
+          break;
+        case "gender_race":
+          $citizen = new $race("female");
+          $this->citizens[] = $citizen;
+          $citizen = new $race("male");
+          $this->citizens[] = $citizen;
+          break;
+      }
+    }
+  }
+}
+
+$town = new town(array());
+$town->printTown();
+/*
 $people = array();
 
 for($i = 0; $i < 100; ++$i)
@@ -77,12 +140,11 @@ for($i = 0; $i < 100; ++$i)
 $i = 1;
 foreach($people as $person)
 {
-  logMessage("INFO", str_pad ($i++, 3, " ", STR_PAD_LEFT)." | ".$person->getName()." - ".$person->getRace()." ".$person->getGender());
+  GhLogger::writeLog(str_pad ($i++, 3, " ", STR_PAD_LEFT)." | ".$person->getName()." - ".$person->getRace()." ".$person->getGender());
   //print_r($person->getData());
   //echo("\n");
 }
-
+*/
 ?>
-</pre>
 </body>
 </html>
